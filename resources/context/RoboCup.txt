@@ -1,0 +1,19 @@
+The RoboCup@Home leagueThe RoboCup@Home league aims to develop robotic service and assistance technology with high relevance for future personal home applications.
+ It is the largest annual international competition for autonomous service robots and is part of the RoboCup initiative.
+ A set of benchmark tests is used to evaluate the robots' abilities and performance in a realistic, non-standard home environment.
+ The focus is on the following domains, but is not limited to: Human-Robot Interaction and Cooperation, Navigation and Mapping in dynamic environments, Computer Vision and Object Recognition under natural light conditions, Object Manipulation, Adaptive Behaviors, Behavior Integration, Environmental Intelligence, Standardization and Systems Integration.
+ It is co-located with the RoboCup symposium.
+Who can participate?Anyone with an independent robot can participate.
+ The @Home league consists of a few tests and an open challenge to demonstrate your robot's skills.
+ To participate in the open challenge it is necessary to participate in at least one test.
+ The competition takes place in a real-world setting.
+The competitionThe RoboCup@Home competition consists of tests that robots must solve.
+ The tests change over the years to become more advanced and act as a general measure of quality in the desired areas.
+ Performance measurement is based on a score derived from competition rules and assessment by a jury.
+Test criteria are listed below: include human-robot interaction be socially relevant be application-directed/oriented be scientifically challenging be simple and have self-explanatory rules be interesting to watchThe scenarioThe final setting is the real world itself.
+ To gradually develop possible technologies, a basic home environment is provided as a general setting.
+ In the first years (we started in 2006) it consisted of a living room and a kitchen but soon it also began to involve other areas of daily life, such as a garden/park area, a store, a street or other public places.
+FinalsRoboCup@Home ends with the finals where the teams with the highest points can play in the scenario that has been created.
+ Teams are evaluated by a jury made up of roboticists and non-roboticists, such as people from industry, human-machine interaction, industrial design, the public and the press.
+ The classification of the finals determines the winner.
+ In the finals there is less focus on technical issues, as reaching the finals already means that the teams are very good at a technical level.
