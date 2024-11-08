@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(utbots_llama_node)
+project(utbots_llama)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -13,7 +13,7 @@ find_package(Python3 REQUIRED)
 
 execute_process(  
     COMMAND ${Python3_EXECUTABLE} -m pip install --upgrade llama-cpp-python   --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
-    #COMMAND ${Python3_EXECUTABLE} -m pip install -r requirements.txt --upgrade --ignore-installed 
+    # COMMAND ${Python3_EXECUTABLE} -m pip install -r requirements.txt --upgrade --ignore-installed 
     #COMMAND ${Python3_EXECUTABLE} -m pip install llama-cpp-python --upgrade   
     RESULT_VARIABLE result
 )
@@ -32,7 +32,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES utbots_llama_node
+#  LIBRARIES utbots_llama
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -146,7 +146,7 @@ catkin_install_python(PROGRAMS
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/utbots_llama_node.cpp
+#   src/${PROJECT_NAME}/utbots_llama.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -157,7 +157,7 @@ catkin_install_python(PROGRAMS
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/utbots_llama_node_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/utbots_llama_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -221,7 +221,7 @@ catkin_install_python(PROGRAMS
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_utbots_llama_node.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_utbots_llama.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

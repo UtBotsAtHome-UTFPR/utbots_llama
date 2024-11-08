@@ -1,7 +1,7 @@
-dblatex==0.3.10
 huggingface_hub
 pysqlite3-binary
 chromadb
 sentence-transformers
 langchain-text-splitters
-llama-cpp-python
+llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
+   
