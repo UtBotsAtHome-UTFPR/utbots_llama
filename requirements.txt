@@ -4,4 +4,4 @@ chromadb
 sentence-transformers
 langchain-text-splitters
 llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121
-   
+
