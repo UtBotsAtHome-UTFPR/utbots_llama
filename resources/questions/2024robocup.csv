@@ -1,57 +1,44 @@
-n;questons;answers
-1;What is the hero's name in The Legend of Zelda?;Despite most people's believes, he's called Link
-2;What are the names of the ghosts who chase Pac Man and Ms. Pac Man?;Inky, Blinky, Pinky, and Clyde
-3;What's the name of the Mythbusters' crash test dummy?;The Mythbusters' crash test dummy is called Buster
-4;What is an Oxford comma?;The hotly contested punctuation before a conjunction in a list
-5;Who was the captain of the Enterprise in the pilot episode of Star Trek?;The captain of the Enterprise in the pilot episode was Captain Pike
-6;What is the symbol for the modulus operator in C?;The percentage symbol is used as modulus operator in C
-7;What function is automatically called at the beginning of a C++ program?;The main function
-8;Which computer programming languages was introduced by IBM in 1957?;Fortran was introduced by IBM in 1957
-9;Who is considered as the first programmer?;The first programmer was Ada Lovelace
-10;Has a robot ever killed a person?;The first known case of robot homicide occurred in 1981, when a robotic arm crushed a Japanese Kawasaki factory worker
-11;Who was HitchBOT?;A hitchhiking robot that relied on the kindness of strangers to travel the world and was slain by humans
-12;Are self-driving cars safe?;Yes. Car accidents are product of human misconduct
-13;Who invented the compiler?;Grace Hoper. She wrote it in her spare time
-14;Who created the Python Programming Language?;Python was invented by Guido van Rossum
-15;Is Mark Zuckerberg a robot?;Sure. I've never seen him drink water
-16;Why did you run away?;I heard an electric can opener
-17;What kind of salad do robots like?;Salads made with ice-borg lettuce.
-18;What did you ate for lunch?;I had a byte
-19;Why did robots get angry so often?;People kept pushing our buttons.
-20;Why shouldn't R2D2 be allowed in movies?;He says so many foul words they have to bleep everything he says!
-21;What's your favorite style of music?;I like electronic and heavy Metal
-General (complex) questions:;;
-22;What does the acronym SMTP represent?;SMTP stands for Simple Mail Transport Protocol
-23;What does the acronym MPEG represent?;MPEG stands for Moving Picture Experts Group
-24;What does the acronym GIMP represent?;GNU Image Manipulation Program
-25;What does the acronym GNU represent?;GNU is a recursive acronym meaning GNU is Not Unix
-Questions about Brazil (simple):;;
-26;What is the most populous city in Brazil?;Sao Paulo is the most populous city in Brazil with 12.03 million residents.
-27;Which continent is Brazil located in?;The Brazilian territory is located on the South American continent.
-28;On what day, month and year was Brazil's independence de- clared?;On September 7, 1822, Brazil's independence was declared.
-29;How many states does Brazil have (with Federal District)?;Currently, Brazil is divided into 26 states and the Federal District, altogether there are 27 federative units.
-30;In what year did the first Brazilian astronaut go to space?;In March 2006, Pontes became the first Brazilian to go to space.
-31;What is the only capital of Brazil crossed by the Equator?;Macapa is the only Brazilian capital crossed by the Equator line.
-32;How many time zones are there in Brazil?;Brazil is a country with continental dimensions, in all it has four time zones.
-33;In which city is the world's first urban elevator and what is the name of that elevator?;The Lacerda Elevator is a public urban elevator located in Salvador, Brazil.
-34;What is the only biome present in Brazil that is exclusive in the world?;The Caatinga, characterized by its dry, desert habitat is the only one of Brazil's biomes found exclusively within the country.
-35;Pampulha Lake is a tourist spot in which Brazilian city?;Belo Horizonte
-36;What is the smallest Brazilian state in territorial extension?;Sergipe
-37;Which capitals in Brazil have the same name as your state?;Sao Paulo and Rio de Janeiro
-38;Where is the Itamaraty Palace located?;Brasilia
-39;What was the first name given to Brazil by the Portuguese?;Ilha de vera Cruz
-Questions about Brazil (simple):;;
-40;What is the Newest State in Brazil?;Tocantins
-41;What is the oldest state in Brazil?;Pernambuco
-42;What is the capital of Ceara?;Fortaleza
-43;What is the capital of Rio Grande do Sul?;Porto alegre
-44;What is the capital of Rio Grande do Norte?;Natal
-45;What is the capital of Brazil?;Brasilia
-46;What is the capital of Pernambuco?;Recife
-47;What is the capital of Para?;Belem
-Questions about Bahia (simple):;;
-48;What is the capital of Bahia?;Salvador
-49;Acaraje is a typical food from which state?;Bahia
-50;What are the colors of Bahia's flag?;White, red and blue
-51;What are some typical foods from Bahia?;Caruru, vatapa, abara and acaraje.
-52;What is the most popular rhythm in Bahia, played mainly during the Bahian Carnival?;Axe or pagode.
+Questions about Vitoria (simple):;;
+1;What is the capital of Espirito Santo? Vitória. 		
+2;How many habitants does Vitoria have? 370,000 habitants.
+3;What is the name of a bay that surrounds Vitoria? Vitória Bay and the Santa Maria, Bubu, Marinho, and Aribiri rivers.
+4;What kind of product can i buy in Vitoria? 	Weaving, ceramics, fibers.
+5;What are some typical foods from Vitoria? Moqueca and torta capixaba.
+6;How many bridges connect Vitória Island to the mainland? Seven bridges.
+7;What is the rainiest month in Vitória? November.
+8;What are the main cultural influences in Espírito Santo? European, Indigenous, and African influences.
+9;What is the highlight of craftsmanship in Vitória? The creation of clay pots.
+10;Which annual festival celebrates the tradition of the panel makers? The Festa das Paneleiras. 
+Questions about Service Robots (simple):;;
+11;What does the International Organization for Standardization (ISO) define as a "service robot"? A robot “that performs useful tasks for humans or equipment excluding industrial automation applications”.
+12;What kind of job does a service robot typically perform? A job that is dirty, dull, distant, dangerous or repetitive.
+13;Who developed the first industrial robot arm, "Unimate"? Joseph F. Engelberger.
+14;How are service robots categorized? They are categorized according to personal or professional use.
+15;What is one of the most popular domestic service robots? The Roomba vacuum cleaner.
+16;What do robots require according to ISO 8373? A “degree of autonomy”, which is the “ability to perform intended tasks based on current state and sensing, without human intervention”.
+17;What kind of tasks do domestic robots perform? Tasks that humans regularly perform in non-industrial environments, like cleaning floors, mowing the lawn and pool maintenance.
+18;How can service robots help people with disabilities or older people? They may help them to live independently.
+19;Are service robots only fully autonomous? No, they range from partial autonomy—including human-robot interaction—to full autonomy, without active human intervention.
+20;What is an example of a service robot that became popular with smart home technology? The robotic lawn mower.                
+Generic Questions(simple):;;
+21;What is the hero’s name in The Legend of Zelda? 	Despite most people’s believes, he’s called Link.
+22;What are the names of the ghosts who chase Pac Man and Ms. Pac Man? 	Inky, Blinky, Pinky, and Clyde.
+23;What’s the name of the Mythbusters’ crash test dummy? 	The Mythbusters’ crash test dummy is called Buster.
+24;What is an Oxford comma? 	The hotly contested punctuation before a conjunction in a list.
+25;Who was the captain of the Enterprise in the pilot episode of Star Trek? 	The captain of the Enterprise in the pilot episode was Captain Pike.
+26;What is the symbol for the modulus operator in C? 	The percentage symbol is used as modulus operator in C.
+27;What function is automatically called at the beginning of a C++ program? 	The main function.
+28;Which computer programming languages was introduced by IBM in 1957? 	Fortran was introduced by IBM in 1957.
+29;Who is considered as the first programmer? 	The first programmer was Ada Lovelace.
+30;Has a robot ever killed a person? 	The first known case of robot homicide occurred in 1981, when a robotic arm crushed a Japanese Kawasaki factory worker.
+31;Who was HitchBOT? 	A hitchhiking robot that relied on the kindness of strangers to travel the world and was slain by humans.
+32;Are self-driving cars safe? 	Yes. Car accidents are product of human misconduct.
+33;Who invented the compiler? 	Grace Hoper. She wrote it in her spare time.
+34;Who created the Python Programming Language? 	Python was invented by Guido van Rossum.
+35;Is Mark Zuckerberg a robot? 	Sure. I’ve never seen him drink water.
+36;Why did you run away? 	I heard an electric can opener.
+37;What kind of salad do robots like? 	Salads made with ice-borg lettuce.
+38;What did you ate for lunch? 	I had a byte.
+38;Why did robots get angry so often? 	People kept pushing our buttons.
+39;Why shouldn’t R2D2 be allowed in movies? 	He says so many foul words they have to bleep everything he says!
+40;What’s your favorite style of music? 	I like electronic and heavy Metal.

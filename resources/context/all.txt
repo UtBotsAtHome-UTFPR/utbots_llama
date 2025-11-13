@@ -1,88 +1,76 @@
-BAHIA
+VITORIA
 
-Bahia is a Brazilian state located in the Northeast Region. 
-The population of Bahia is 14.9 million inhabitants, the fourth largest in Brazil.
-The municipality of Salvador is the state capital and also served as the first Brazilian capital between 1549 and 1763.
-The state's geography is characterized by plains and depressions, as well as two dominant climate types, tropical and semi-arid. 
-Bahia's economy is the main one in the Northeast and focuses on the tertiary sector and the manufacturing industry.
-Bahia climate Two climate types are predominant in Bahia.
-The first is the semi-arid, which occurs in the central region (with the exception of the highest areas) and part of the west of the state.
-This climate is characterized by high temperatures and low relative humidity, with irregular precipitation and a dry period generally in the winter months. Rainfall is concentrated in the summer, with an annual average of around 800 mm. The tropical climate occurs mainly in the east of Bahia, also marked by high annual temperatures and a higher level of humidity, especially on the coast. Average annual precipitation varies between 1,200 and 1,600 mm. In some coastal cities, this value can exceed 2,000 mm.
-Relief of Bahia Plateaus and depressions are the predominant forms of relief in Bahia, which gives most of the state elevations above 300 meters. The west of Bahia and part of the north are part of the Depression Sertaneja and Sao Francisco, to the east of which the Plateaus and Serras do Leste-Sudeste extend. The highest terrain in the state is located in this domain, with emphasis on Serra do Espinhaco and Chapada Diamantina. This is where the highest point of Bahia and the Northeast is located: Pico do Barbado, 2,033 meters above sea level. In the eastern range, finally, we have the Coastal Plains and Tablelands.
+Vitória is the fourth most populous city in Espírito Santo, with approximately 370,000 inhabitants, according to estimates from the Brazilian Institute of Geography and Statistics (IBGE) (2021).
+The municipality also boasts breathtaking natural landscapes and incredible beach spots for enjoying the summer, such as Camburi Beach, Castanheiras Beach, and Curva da Jurema.
+The Espírito Santo city is surrounded by Vitória Bay and the Santa Maria, Bubu, Marinho, and Aribiri rivers, and its geography includes islands, coves, hillsides, mangroves, and beaches, making tourism in the destination even more special.
+Therefore, the city's natural landscapes enchant all who visit, especially tourists who arrive by plane and can marvel at every detail from above. In fact, seven bridges connect Vitória Island to the mainland. Incredible, isn't it?
+The capital of Espírito Santo is the center of the state's metropolitan region, which includes six other municipalities: Cariacica, Fundão, Guarapari, Serra, Vila Velha, and Viana.
+Vitória's geographic boundaries are: Serra (to the north), Vila Velha (to the south), the Atlantic Ocean (to the east), and Cariacica (to the west).
+In summer, temperatures range between 23°C and 30°C, while in winter, they range between 18°C ​​and 26°C. November is the rainiest month. Therefore, if you want to visit during a less rainy season, avoid traveling during this time.
+Craftsmanship is of great importance in Espírito Santo, with a variety of products including weaving, ceramics, fibers, braiding, coconut and wood objects, as well as work with shells and seeds. Espírito Santo culture has been influenced primarily by European, Indigenous, and African influences.
+In Vitória (ES), the highlight is the creation of clay pots, made using a centuries-old method inherited from the Indigenous peoples of the Goiabeiras region. The production technique has changed little in over 400 years, since they were produced by the tribes of the indigenous peoples.
+Annual in the capital of Espírito Santo, this tradition is celebrated with the Festa das Paneleiras (Feast of the Panel Makers), which has taken place in the second half of each year since 1992. The festival features concerts, performances by Congo bands, traditional foods, and the sale of handcrafted items. The public also has the opportunity to visit the Galpão das Paneleiras (Gallery of the Panel Makers).
+The artisans are affiliated with the Paneleiras Association, and most of them work in the warehouse, which has 32 booths with countertops, cabinets, and shelves. To make the pots, the makers source clay from the Mulembá Valley, located in the Joana D'Arc neighborhood on Vitória Island.
+The bark of the Rhysophora mangle, popularly known as the red mangrove, is extracted from the mangrove forest bordering the Goiabeiras region. The waterproof tannin dye is removed from this bark, which is then used to coat the still-hot pots.
+The tradition extends further, precisely because two typical regional dishes are prepared and served in these pots: moqueca and torta capixaba.
 
-1 	What is the hero’s name in The Legend of Zelda? 	Despite most people’s believes, he’s called Link
-2 	What are the names of the ghosts who chase Pac Man and Ms. Pac Man? 	Inky, Blinky, Pinky, and Clyde
-3 	What’s the name of the Mythbusters’ crash test dummy? 	The Mythbusters’ crash test dummy is called Buster
-4 	What is an Oxford comma? 	The hotly contested punctuation before a conjunction in a list
-5 	Who was the captain of the Enterprise in the pilot episode of Star Trek? 	The captain of the Enterprise in the pilot episode was Captain Pike
-6 	What is the symbol for the modulus operator in C? 	The percentage symbol is used as modulus operator in C
-7 	What function is automatically called at the beginning of a C++ program? 	The main function
-8 	Which computer programming languages was introduced by IBM in 1957? 	Fortran was introduced by IBM in 1957
-9 	Who is considered as the first programmer? 	The first programmer was Ada Lovelace
-10 	Has a robot ever killed a person? 	The first known case of robot homicide occurred in 1981, when a robotic arm crushed a Japanese Kawasaki factory worker
-11 	Who was HitchBOT? 	A hitchhiking robot that relied on the kindness of strangers to travel the world and was slain by humans
-12 	Are self-driving cars safe? 	Yes. Car accidents are product of human misconduct
-13 	Who invented the compiler? 	Grace Hoper. She wrote it in her spare time
-14 	Who created the Python Programming Language? 	Python was invented by Guido van Rossum
-15 	Is Mark Zuckerberg a robot? 	Sure. I’ve never seen him drink water
-16 	Why did you run away? 	I heard an electric can opener
-17 	What kind of salad do robots like? 	Salads made with ice-borg lettuce.
-18 	What did you ate for lunch? 	I had a byte
-19 	Why did robots get angry so often? 	People kept pushing our buttons.
-20 	Why shouldn’t R2D2 be allowed in movies? 	He says so many foul words they have to bleep everything he says!
-21 	What’s your favorite style of music? 	I like electronic and heavy Metal
-General (complex) questions: 		
-22 	What does the acronym SMTP represent? 	SMTP stands for Simple Mail Transport Protocol
-23 	What does the acronym MPEG represent? 	MPEG stands for Moving Picture Experts Group
-24 	What does the acronym GIMP represent? 	GNU Image Manipulation Program
-25 	What does the acronym GNU represent? 	GNU is a recursive acronym meaning GNU is Not Unix
-Questions about Brazil (simple): 		
-26 	What is the most populous city in Brazil? 	São Paulo is the most populous city in Brazil with 12.03 million residents.
-27 	Which continent is Brazil located in? 	The Brazilian territory is located on the South American continent.
-28 	On what day, month and year was Brazil’s independence de- clared? 	On September 7, 1822, Brazil’s independence was declared.
-29 	How many states does Brazil have (with Federal District)? 	Currently, Brazil is divided into 26 states and the Federal District, altogether there are 27 federative units.
-30 	In what year did the first Brazilian astronaut go to space? 	In March 2006, Pontes became the first Brazilian to go to space.
-31 	What is the only capital of Brazil crossed by the Equator? 	Macapá is the only Brazilian capital crossed by the Equator line.
-32 	How many time zones are there in Brazil? 	Brazil is a country with continental dimensions, in all it has four time zones.
-33 	In which city is the world’s first urban elevator and what is the name of that elevator? 	The Lacerda Elevator is a public urban elevator located in Salvador, Brazil.
-34 	What is the only biome present in Brazil that is exclusive in the world? 	The Caatinga, characterized by its dry, desert habitat is the only one of Brazil’s biomes found exclusively within the country.
-35 	Pampulha Lake is a tourist spot in which Brazilian city? 	Belo Horizonte
-36 	What is the smallest Brazilian state in territorial extension? 	Sergipe
-37 	Which capitals in Brazil have the same name as your state? 	São Paulo and Rio de Janeiro
-38 	Where is the Itamaraty Palace located? 	Brasília
-39 	What was the first name given to Brazil by the Portuguese? 	Ilha de vera Cruz
-Questions about Brazil (simple): 		
-40 	What is the Newest State in Brazil? 	Tocantins
-41 	What is the oldest state in Brazil? 	Pernambuco
-42 	What is the capital of Ceará? 	Fortaleza
-43 	What is the capital of Rio Grande do Sul? 	Porto alegre
-44 	What is the capital of Rio Grande do Norte? 	Natal
-45 	What is the capital of Brazil? 	Brasília
-46 	What is the capital of Pernambuco? 	Recife
-47 	What is the capital of Pará? 	Belém
-Questions about Bahia (simple): 		
-48 	What is the capital of Bahia? 	Salvador
-49 	Acarajé is a typical food from which state? 	Bahia
-50 	What are the colors of Bahia's flag? 	White, red and blue
-51 	What are some typical foods from Bahia? 	Caruru, vatapá, abará and acarajé.
-52 	What is the most popular rhythm in Bahia, played mainly during the Bahian Carnival? 	Axé or pagode.
+Questions about Vitoria (simple):;;
+1 What is the capital of Espirito Santo? Vitória. 		
+2 How many habitants does Vitória have? 370,000 habitants.
+3 What is the name of a bay that surrounds Vitoria? Vitória Bay and the Santa Maria, Bubu, Marinho, and Aribiri rivers.
+4 What kind of product can i buy in Vitoria? 	Weaving, ceramics, fibers.
+5 What are some typical foods from Vitoria? Moqueca and torta capixaba.
+6 How many bridges connect Vitória Island to the mainland? Seven bridges.
+7 What is the rainiest month in Vitória? November.
+8 What are the main cultural influences in Espírito Santo? European, Indigenous, and African influences.
+9 What is the highlight of craftsmanship in Vitória? The creation of clay pots.
+10 Which annual festival celebrates the tradition of the panel makers? The Festa das Paneleiras. 
+Questions about Service Robots (simple):;;
+11 What does the International Organization for Standardization (ISO) define as a "service robot"? A robot “that performs useful tasks for humans or equipment excluding industrial automation applications”.
+12 What kind of job does a service robot typically perform? A job that is dirty, dull, distant, dangerous or repetitive.
+13 Who developed the first industrial robot arm, "Unimate"? Joseph F. Engelberger.
+14 How are service robots categorized? They are categorized according to personal or professional use.
+15 What is one of the most popular domestic service robots? The Roomba vacuum cleaner.
+16 What do robots require according to ISO 8373? A “degree of autonomy”, which is the “ability to perform intended tasks based on current state and sensing, without human intervention”.
+17 What kind of tasks do domestic robots perform? Tasks that humans regularly perform in non-industrial environments, like cleaning floors, mowing the lawn and pool maintenance.
+18 How can service robots help people with disabilities or older people? They may help them to live independently.
+19 Are service robots only fully autonomous? No, they range from partial autonomy—including human-robot interaction—to full autonomy, without active human intervention.
+20 What is an example of a service robot that became popular with smart home technology? The robotic lawn mower.                
+Generic Questions(simple):;;
+21 What is the hero’s name in The Legend of Zelda? 	Despite most people’s believes, he’s called Link.
+22 What are the names of the ghosts who chase Pac Man and Ms. Pac Man? 	Inky, Blinky, Pinky, and Clyde.
+23 What’s the name of the Mythbusters’ crash test dummy? 	The Mythbusters’ crash test dummy is called Buster.
+24 What is an Oxford comma? 	The hotly contested punctuation before a conjunction in a list.
+25 Who was the captain of the Enterprise in the pilot episode of Star Trek? 	The captain of the Enterprise in the pilot episode was Captain Pike.
+26 What is the symbol for the modulus operator in C? 	The percentage symbol is used as modulus operator in C.
+27 What function is automatically called at the beginning of a C++ program? 	The main function.
+28 Which computer programming languages was introduced by IBM in 1957? 	Fortran was introduced by IBM in 1957.
+29 Who is considered as the first programmer? 	The first programmer was Ada Lovelace.
+30 Has a robot ever killed a person? 	The first known case of robot homicide occurred in 1981, when a robotic arm crushed a Japanese Kawasaki factory worker.
+31 Who was HitchBOT? 	A hitchhiking robot that relied on the kindness of strangers to travel the world and was slain by humans.
+32 Are self-driving cars safe? 	Yes. Car accidents are product of human misconduct.
+33 Who invented the compiler? 	Grace Hoper. She wrote it in her spare time.
+34 Who created the Python Programming Language? 	Python was invented by Guido van Rossum.
+35 Is Mark Zuckerberg a robot? 	Sure. I’ve never seen him drink water.
+36 Why did you run away? 	I heard an electric can opener.
+37 What kind of salad do robots like? 	Salads made with ice-borg lettuce.
+38 What did you ate for lunch? 	I had a byte.
+39 Why did robots get angry so often? 	People kept pushing our buttons.
+40 Why shouldn’t R2D2 be allowed in movies? 	He says so many foul words they have to bleep everything he says!
+41 What’s your favorite style of music? 	I like electronic and heavy Metal.
 
-The RoboCup@Home leagueThe RoboCup@Home league aims to develop robotic service and assistance technology with high relevance for future personal home applications.
- It is the largest annual international competition for autonomous service robots and is part of the RoboCup initiative.
- A set of benchmark tests is used to evaluate the robots' abilities and performance in a realistic, non-standard home environment.
- The focus is on the following domains, but is not limited to: Human-Robot Interaction and Cooperation, Navigation and Mapping in dynamic environments, Computer Vision and Object Recognition under natural light conditions, Object Manipulation, Adaptive Behaviors, Behavior Integration, Environmental Intelligence, Standardization and Systems Integration.
- It is co-located with the RoboCup symposium.
-Who can participate?Anyone with an independent robot can participate.
- The @Home league consists of a few tests and an open challenge to demonstrate your robot's skills.
- To participate in the open challenge it is necessary to participate in at least one test.
- The competition takes place in a real-world setting.
-The competitionThe RoboCup@Home competition consists of tests that robots must solve.
- The tests change over the years to become more advanced and act as a general measure of quality in the desired areas.
- Performance measurement is based on a score derived from competition rules and assessment by a jury.
-Test criteria are listed below: include human-robot interaction be socially relevant be application-directed/oriented be scientifically challenging be simple and have self-explanatory rules be interesting to watchThe scenarioThe final setting is the real world itself.
- To gradually develop possible technologies, a basic home environment is provided as a general setting.
- In the first years (we started in 2006) it consisted of a living room and a kitchen but soon it also began to involve other areas of daily life, such as a garden/park area, a store, a street or other public places.
-FinalsRoboCup@Home ends with the finals where the teams with the highest points can play in the scenario that has been created.
- Teams are evaluated by a jury made up of roboticists and non-roboticists, such as people from industry, human-machine interaction, industrial design, the public and the press.
- The classification of the finals determines the winner.
- In the finals there is less focus on technical issues, as reaching the finals already means that the teams are very good at a technical level.
+Service robots assist human beings, typically by performing a job that is dirty, dull, distant, dangerous or repetitive.
+They typically are autonomous and/or operated by a built-in control system, with manual override options.
+The term "service robot" does not have a strict technical definition.
+The International Organization for Standardization defines a “service robot” as a robot “that performs useful tasks for humans or equipment excluding industrial automation applications”.
+A type of service robot which became popular with the rise of the smart home technology is the robotic lawn mower, here applied in a small garden.
+The first industrial robot arm, "Unimate," was developed by Joseph F Engelberger, known as the "father of the robot arm".
+According to ISO 8373 robots require “a degree of autonomy”, which is the “ability to perform intended tasks based on current state and sensing, without human intervention”.
+For service robots this ranges from partial autonomy - including human-robot interaction - to full autonomy - without active human robot intervention.
+The International Federation of Robotics (IFR) statistics for service robots therefore include systems based on some degree of human robot interaction or even full tele-operation as well as fully autonomous systems.
+Service robots are categorized according to personal or professional use.
+They have many forms and structures as well as application areas.
+The Roomba vacuum cleaner is one of the most popular domestic service robots.
+Domestic robots perform tasks that humans regularly perform in non-industrial environments, like people's homes such as for cleaning floors, mowing the lawn and pool maintenance.
+People with disabilities, as well as people who are older, may soon be able to use service robots to help them live independently.
+It is also possible to use certain robots as assistants or butlers.

@@ -1,20 +1,20 @@
+# llama_node.py
+
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer, CancelResponse, GoalResponse
 from ament_index_python.packages import get_package_share_directory
 
 from std_msgs.msg import String
-from utbots_actions.action import InterpretLlama # A importação continua a mesma
+from utbots_actions.action import InterpretLlama
 
 from llama_cpp import Llama
 import chromadb
 from chromadb.errors import NotFoundError
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from huggingface_hub import hf_hub_download
 
 import os
-# 'time' não é mais necessário para a lógica principal
-# import time
 
 REPO_ID = "TheBloke/Llama-2-7B-Chat-GGUF"
 FILENAME = "llama-2-7b-chat.Q2_K.gguf"
@@ -45,11 +45,7 @@ class LlamaActionServer(Node):
             goal_callback=self.goal_callback,
             cancel_callback=self.cancel_callback
         )
-
-
-        self.pub_response = self.create_publisher(String, '/utbots/voice/tts/robot_speech', 10)
    
-        
         self.get_logger().info("Servidor de Ação Llama pronto para receber goals.")
 
     def handle_llama_service(self, req):
@@ -63,14 +59,13 @@ class LlamaActionServer(Node):
 
         ### Answer:
         {}"""
-        questionQA=req
+        questionQA = "Give a short response, 2-3 sentences max, for the following question" + req
         search_context = self.collection.query(query_texts=[questionQA], n_results=3)
         context = search_context['documents'][0]
         input_text = input_prompt.format(questionQA, context, "")
-        output = self.llm(input_text, max_tokens=100, stop=["###"], temperature=0.1, top_p=0.2, top_k=10, repeat_penalty=1.2, echo=True)
-        response_text = output['choices'][0]['text']
-        return (response_text)
-
+        output = self.llm(input_text, max_tokens=100, stop=["###", "\n\n"], temperature=0.1, top_p=0.2, top_k=10, repeat_penalty=1.2, echo=True)
+        response_text = output['choices'][0]['text'] 
+        return response_text
 
     def goal_callback(self, goal_request):
         self.get_logger().info('Recebido novo goal.')
@@ -84,28 +79,22 @@ class LlamaActionServer(Node):
         self.get_logger().info('Executando o goal...')
  
         result = InterpretLlama.Result()
-
-        # Agora pegamos o texto diretamente do "goal".
         request_text = goal_handle.request.text_input.data
-
         
         try:
-            # Limpa e processa o texto recebido
             clean_text = self.whisper_fix(request_text)
-            response_text = (self.handle_llama_service(clean_text)).split('### Answer:')[1]
+            response_text_full = self.handle_llama_service(clean_text)
+            
+            if '### Answer:' in response_text_full:
+                response_text = response_text_full.split('### Answer:')[1].strip()
+            else:
+                response_text = "Não consegui formular uma resposta a partir do prompt."
             
             self.get_logger().info(f"[Llama] Request: {clean_text}")
             self.get_logger().info(f"[Llama] Response: {response_text}")
-
             
-            # Preenchemos o novo campo de resultado 'llm_output'.
             result.llm_output.data = response_text
-          
-            
-            # Publica a resposta para o TTS
-            msg_response = String()
-            msg_response.data = response_text
-            self.pub_response.publish(msg_response)
+
 
         except Exception as e:
             self.get_logger().error(f"[Llama] Erro: {e}")
@@ -120,17 +109,20 @@ class LlamaActionServer(Node):
         msg_lower = msg.lower()
         msg_lower = msg_lower.replace('robocop', 'robocup')
         msg_lower = msg_lower.replace('estro', 'hestia')
+        msg_lower = msg_lower.replace('esha', 'hestia')
+        msg_lower = msg_lower.replace('spiritum', 'Espirito')
+        msg_lower = msg_lower.replace('sanctun', 'Santo')
         msg_lower = msg_lower.replace('estia', 'hestia')
         return msg_lower
     
     def init_client(self):
-        collection_name = "utbots_context"
+        collection_name = 'all.txt'
         try:
             collection = self.client.get_collection(name=collection_name)
             self.get_logger().info(f"Coleção '{collection_name}' encontrada e carregada.")
             return collection
-        except NotFoundError:
-            self.get_logger().info(f"Coleção '{collection_name}' não encontrada. Criando e populando...")
+        except Exception: 
+            self.get_logger().info(f"Coleção '{collection_name}' não encontrada ou erro ao carregar. Criando e populando...")
             collection = self.client.create_collection(name=collection_name, metadata={"hnsw:space": "cosine"})
             PATH_DIR1 = self.pkg_path + "/resources/context/"
             splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=50, separators=[".", " ", ""])
@@ -146,8 +138,10 @@ class LlamaActionServer(Node):
 def main(args=None):
     rclpy.init(args=args)
     llama_action_server = LlamaActionServer()
-    try: rclpy.spin(llama_action_server)
-    except KeyboardInterrupt: pass
+    try:
+        rclpy.spin(llama_action_server)
+    except KeyboardInterrupt:
+        pass
     finally:
         llama_action_server.destroy_node()
         rclpy.shutdown()
