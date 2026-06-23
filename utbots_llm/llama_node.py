@@ -9,15 +9,11 @@ from utbots_actions.action import InterpretLlama # A importação continua a mes
 from llama_cpp import Llama
 import chromadb
 from chromadb.errors import NotFoundError
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from huggingface_hub import hf_hub_download
 
 import os
-# 'time' não é mais necessário para a lógica principal
-# import time
 
-REPO_ID = "TheBloke/Llama-2-7B-Chat-GGUF"
-FILENAME = "llama-2-7b-chat.Q2_K.gguf"
 
 class LlamaActionServer(Node):
     def __init__(self):
@@ -29,23 +25,28 @@ class LlamaActionServer(Node):
         self.client = chromadb.PersistentClient(path=self.pkg_path+"/.collections")
         self.collection = self.init_client()
 
-        self.get_logger().info("Baixando e inicializando o modelo Llama...")
-        model_path = hf_hub_download(repo_id=REPO_ID, filename=FILENAME, cache_dir=self.pkg_path+"/.hf_cache")
+        self.get_logger().info("Configurando e inicializando o modelo Llama...")
+        
+        self.get_logger().info("Configurando e inicializando o modelo Llama...")
+        
+        # Define o caminho fixo direto para o modelo Llama 3.1 8B local
+        model_path = "/home/joao/ros_joao/src/utbots_llama/resources/models/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"        
+       
         self.llm = Llama(
             model_path=model_path,
             verbose=False,
             n_ctx=2048,
-            n_gpu_layers=-1                            
+            n_gpu_layers= 0                            
         )
-        self.get_logger().info("Modelo Llama carregado.")
 
         self._action_server = ActionServer(
-            self, InterpretLlama, 'llama_inference',
+            self,
+            InterpretLlama,
+            'llama_inference',
             execute_callback=self.execute_callback,
             goal_callback=self.goal_callback,
             cancel_callback=self.cancel_callback
         )
-
 
         self.pub_response = self.create_publisher(String, '/utbots/voice/tts/robot_speech', 10)
    
@@ -54,7 +55,21 @@ class LlamaActionServer(Node):
 
     def handle_llama_service(self, req):
         input_prompt = """
-        Answer the following question based on the context given after it in the same language as the question:
+        You are a helpful and direct robot assistant. Answer the following question in a natural, conversational tone based on the provided data.
+
+        CRITICAL REASONING RULES:
+        1. Answer directly and concisely. Do NOT include any markdown formatting, hashes (#), list numbers (like '1.'), or introductory phrases.
+        2. Do NOT mention the words "context", "text", "document", "provided data", or "according to the text". Act as if you know the information yourself.
+        3. NEVER use digits or numbers in your response. Every single number, score, date, year, or quantity MUST be spelled out in Portuguese text.
+
+        EXAMPLES OF NUMBER CONVERSIONS:
+        - 4 -> quatro
+        - 48 -> quarenta e oito
+        - 3 a 1 -> três a um
+        - 2026 -> dois mil e vinte e seis
+        - 18 anos -> dezoito anos
+        - 88.966 -> oitenta e oito mil novecentos e sessenta e seis
+
         ### Question:
         {}
 
@@ -67,7 +82,16 @@ class LlamaActionServer(Node):
         search_context = self.collection.query(query_texts=[questionQA], n_results=3)
         context = search_context['documents'][0]
         input_text = input_prompt.format(questionQA, context, "")
-        output = self.llm(input_text, max_tokens=100, stop=["###"], temperature=0.1, top_p=0.2, top_k=10, repeat_penalty=1.2, echo=True)
+        output = self.llm(
+            input_text, 
+            max_tokens=50, 
+            stop=["###", "\n\n", "CRITICAL"], 
+            temperature=0.1, 
+            top_p=0.2, 
+            top_k=10, 
+            repeat_penalty=1.2, 
+            echo=False
+        )
         response_text = output['choices'][0]['text']
         return (response_text)
 
@@ -90,22 +114,29 @@ class LlamaActionServer(Node):
 
         
         try:
-            # Limpa e processa o texto recebido
+            # Limpa e processa o texto recebido do Whisper
             clean_text = self.whisper_fix(request_text)
-            response_text = (self.handle_llama_service(clean_text)).split('### Answer:')[1]
+            
+            # Pega a resposta direta vinda do serviço
+            raw_response = self.handle_llama_service(clean_text)
+            
+            # Se por acaso o marcador ainda vier junto, limpamos aqui
+            if '### Answer:' in raw_response:
+                response_text = raw_response.split('### Answer:')[1]
+            else:
+                response_text = raw_response
+            
+            # Limpeza preventiva de qualquer vazamento de regras
+            if "CRITICAL" in response_text:
+                response_text = response_text.split("CRITICAL")[0]
+                
+            response_text = response_text.strip()
             
             self.get_logger().info(f"[Llama] Request: {clean_text}")
-            self.get_logger().info(f"[Llama] Response: {response_text}")
+            self.get_logger().info(f"[Llama] Response limpa: {response_text}")
 
-            
             # Preenchemos o novo campo de resultado 'llm_output'.
             result.llm_output.data = response_text
-          
-            
-            # Publica a resposta para o TTS
-            msg_response = String()
-            msg_response.data = response_text
-            self.pub_response.publish(msg_response)
 
         except Exception as e:
             self.get_logger().error(f"[Llama] Erro: {e}")
@@ -132,11 +163,11 @@ class LlamaActionServer(Node):
         except NotFoundError:
             self.get_logger().info(f"Coleção '{collection_name}' não encontrada. Criando e populando...")
             collection = self.client.create_collection(name=collection_name, metadata={"hnsw:space": "cosine"})
-            PATH_DIR1 = self.pkg_path + "/resources/context/"
-            splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=50, separators=[".", " ", ""])
+            PATH_DIR1 = "/home/joao/ros_joao/src/utbots_llama/resources/context/"   
+            splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=50, separators=["\n\n", "\n", ".", " ", ""])
             all_chunks = []
             for file_name in os.listdir(PATH_DIR1):
-                with open(os.path.join(PATH_DIR1, file_name), 'r') as f:
+                with open(os.path.join(PATH_DIR1, file_name), 'r', encoding='utf-8') as f:
                     all_chunks.extend(splitter.split_text(f.read()))
             ids = [str(i) for i, _ in enumerate(all_chunks)]
             collection.add(documents=all_chunks, ids=ids)
